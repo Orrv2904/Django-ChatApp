@@ -12,8 +12,14 @@
 
 <body>
 
-    <h2>{{room}} - DjChat</h2>
-
+    <h2>Welcome <span class="username">{{ username }}</span> you are in this room: {{ room }}</h2>
+    <style>
+        .username {
+            color: whitesmoke;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+        }
+    </style>
     <div id="display">
 
     </div>
@@ -82,8 +88,6 @@
             <input type="submit" value="Send">
         </form>
     </div>
-
-
 
     <script src="{% static 'scripts/home.js' %}"></script>
     <script src="{% static 'scripts/room.js' %}"></script>
